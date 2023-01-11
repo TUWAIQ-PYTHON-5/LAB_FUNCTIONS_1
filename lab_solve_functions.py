@@ -5,6 +5,6 @@ def my_function(p1 : int ) -> int:
         for j in range (i,0,-1):
             print(j, end="  ")
         print(" ")
-my_function(7)
+my_function(5)
 
 print(my_function.__doc__)
