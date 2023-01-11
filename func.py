@@ -15,5 +15,5 @@ def somePrint()-> None:
     """Print something"""
     print("hello world")
 
-somePrint()
+print(somePrint().__doc__)
 
