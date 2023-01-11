@@ -1,10 +1,9 @@
-rows = 5 
-def func1 (rows1 :int) -> int :
-     '''this function will be return the number of parameters'''
-     rows = rows1 
-     return rows 
-for i in range(0, rows):
-    for j in range(rows - i, 0, -1):
-        print(j,end = '')
-    print()
-print (func1.__doc__)
+def function (num):
+    '''this function to print reverse number'''
+    for i in range (1, num +1):
+        line = ''
+        for j in reversed (range (1,(num +1)- i)):
+            line += str(j)
+        print(line)
+function(5)
+print (function.__doc__)
