@@ -6,4 +6,5 @@ def numbers(number1:int) -> int:
             print(c,end=" ")
         print()
     
-numbers(5)
+userNumber:int=int(input("Enter Your Number : "))
+numbers(userNumber)
