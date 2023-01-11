@@ -9,19 +9,31 @@
 1   
 '''
 ### Document the newly created function. describe what it does, then print the documentation. 
-
-def pattern (num :int) -> int:
-    ''' This Function Arrange and print all the numbers under certin givin number'''
+'''
+def patttern (num :int) -> int:
     while num != 0:
         print(num, end=' ')
         num = num-1
-    
-usrNumber: int = int(input("Enter a Number"))
+'''
 
+def pattern (num :int):
+    ''' This Function Arrange and print all the numbers under certin givin number'''
+    for row in range (num,0,-1):
+        for col in range (row, 0 ,-1): 
+          print(col, end=' ')
+        print()
+
+    
+usrNumber: int = int(input("Enter a Number "))
+pattern(usrNumber)
+print(pattern.__doc__)
+'''
 while usrNumber != 0:
     pattern(usrNumber)
     print ()
 #    print(value)
     usrNumber = usrNumber -1
 
-print(pattern.__doc__)
+
+'''
+
