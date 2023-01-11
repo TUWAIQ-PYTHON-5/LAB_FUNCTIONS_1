@@ -1,5 +1,5 @@
 
-def function(y : int ) -> int:
+def function(y):
     ''' here where i can put  the doc '''
     par = y
     return par
