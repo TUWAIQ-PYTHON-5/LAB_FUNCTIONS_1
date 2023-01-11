@@ -11,7 +11,7 @@
 ### Document the newly created function. describe what it does, then print the documentation. 
 
 def pattern (num :int) -> int:
-    
+    ''' This Function Arrange and print all the numbers under certin givin number'''
     while num != 0:
         print(num, end=' ')
         num = num-1
@@ -23,3 +23,5 @@ while usrNumber != 0:
     print ()
 #    print(value)
     usrNumber = usrNumber -1
+
+print(pattern.__doc__)
